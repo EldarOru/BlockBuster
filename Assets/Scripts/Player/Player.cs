@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Player : MonoBehaviour
 {
+    public event Action<Player> onPlayerDeath;
+
     public int health = 3;
 
     // Start is called before the first frame update
@@ -35,5 +38,6 @@ public class Player : MonoBehaviour
             collidedWithEnemy(enemy);
         }
     }
+
 
 }

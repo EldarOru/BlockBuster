@@ -8,7 +8,6 @@ public class EnemyProducer : MonoBehaviour
     public Enemy[] enemyPrefabs;
     public float[] moveSpeedRange;
     public int[] healthRange;
-    int kek;
     private Bounds spawnArea;
     private GameObject player;
 
